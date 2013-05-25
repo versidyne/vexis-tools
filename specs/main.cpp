@@ -1,13 +1,11 @@
 #include <cstdlib>
 #include <iostream>
 
-// define operating system
 #include "os.h"
 
 using namespace std;
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
 	
 	// Display type sizes
     cout << "The size of an int is:\t\t" << sizeof(int) << " bytes.\n";
@@ -20,13 +18,13 @@ int main(int argc, char *argv[])
     
     // Display OS
     #if defined OS_WIN
-    cout << "The operating system is:\tWindows.\n";
+    	cout << "The operating system is:\tWindows.\n";
     #elif defined OS_UNIX
-    cout << "The operating system is:\tUNIX.\n";
+    	cout << "The operating system is:\tUNIX.\n";
     #elif defined OS_ANDROID
-    cout << "The operating system is:\tAndroid.\n";
+    	cout << "The operating system is:\tAndroid.\n";
     #else
-    cout << "The operating system is:\tUnknown.\n";
+    	cout << "The operating system is:\tUnknown.\n";
     #endif
     
     // Pause

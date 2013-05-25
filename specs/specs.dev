@@ -1,9 +1,8 @@
 [Project]
-FileName=Specs.dev
+FileName=specs.dev
 Name=Specs
-UnitCount=1
 Type=1
-Ver=1
+Ver=2
 ObjFiles=
 Includes=
 Libs=
@@ -17,6 +16,8 @@ IsCpp=1
 Icon=
 ExeOutput=
 ObjectOutput=
+LogOutput=
+LogOutputEnabled=0
 OverrideOutput=0
 OverrideOutputName=
 HostApplication=
@@ -27,23 +28,14 @@ CustomMakefile=
 IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
-CompilerSettings=
-
-[Unit1]
-FileName=main.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
+CompilerSettings=0000000000000000000000000
+UnitCount=1
 
 [VersionInfo]
-Major=0
-Minor=1
-Release=1
-Build=1
+Major=1
+Minor=0
+Release=0
+Build=0
 LanguageID=1033
 CharsetID=1252
 CompanyName=
@@ -56,4 +48,15 @@ OriginalFilename=
 ProductName=
 ProductVersion=
 AutoIncBuildNr=0
+SyncProduct=1
+
+[Unit1]
+FileName=main.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
 
