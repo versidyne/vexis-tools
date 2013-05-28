@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Compile for use with GDB
-#g++ -o main main.cpp -ggdb
+#g++ -o main main.cpp common.cpp -ggdb
 
 # Compile Normally
-g++ -o main main.cpp
+g++ -o main main.cpp common.cpp
