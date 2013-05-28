@@ -1,9 +1,10 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "os.h"
-
 using namespace std;
+
+#include "os.h"
+#include "cpu.cpp"
 
 int main(int argc, char *argv[]) {
 	
@@ -26,6 +27,15 @@ int main(int argc, char *argv[]) {
     #else
     	cout << "The operating system is:\tUnknown.\n";
     #endif
+    
+    // Display CPU information
+    cout << "\n";
+    detect_cpu();
+    
+    // Attempt Reboot
+    cout << "Press [Enter] to attempt reboot...";
+	cin.get();
+    reboot();
     
     // Pause for Windows
     #if defined OS_WIN
