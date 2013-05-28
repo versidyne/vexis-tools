@@ -27,9 +27,11 @@ int main(int argc, char *argv[]) {
     	cout << "The operating system is:\tUnknown.\n";
     #endif
     
-    // Pause
-    //cout << "Press [Enter] to continue...";
-    //cin.get();
+    // Pause for Windows
+    #if defined OS_WIN
+		cout << "Press [Enter] to continue...";
+		cin.get();
+	#endif
 
     return EXIT_SUCCESS;
 
