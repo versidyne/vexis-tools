@@ -32,31 +32,23 @@ void halt() {
 // Reboot system
 void reboot() {
 	
-	// Define variables
 	byte temp;
 	
-	// Disable interrupts
 	cli();
 	
 	// Clear all keyboard buffers (output and command buffers)
     do {
-		
 		// Empty user data
         temp = inb(0x64);
-        
         // Empty keyboard data
         if (check_flag(temp, 0) != 0) {
 			inb(0x60);
 		}
-		
     }
-    
     while (check_flag(temp, 1) != 0);
 	
-	// Send reboot command (8042 reset pin)
+	// Send reboot command (8042 reset pin) and halt if failed
 	outb (0x64, 0xFE);
-
-	// Halt the cpu if failed
 	halt();
 	
 }
