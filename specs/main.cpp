@@ -32,11 +32,6 @@ int main(int argc, char *argv[]) {
     cout << "\n";
     detect_cpu();
     
-    // Attempt Reboot
-    cout << "Press [Enter] to attempt reboot...";
-	cin.get();
-    reboot();
-    
     // Pause for Windows
     #if defined OS_WIN
 		cout << "Press [Enter] to continue...";
